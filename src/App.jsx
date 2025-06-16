@@ -6,7 +6,7 @@ import LaunchList from './components/LaunchList';
 import FilterPanel from './components/FilterPanel';
 import { Route, Routes, Link } from 'react-router-dom';
 import InterestedPage from './components/InterestedPage';
-import { Star } from 'lucide-react';
+import { MousePointer } from 'lucide-react';
 import './App.css';
 
 function Home({ filter, setFilter, page, setPage }) {
@@ -35,7 +35,7 @@ function App() {
     <div>
       <Link to="/interested" style={{ position: 'fixed', top: 24, right: 32, zIndex: 100 }}>
         <div style={{ position: 'relative', display: 'inline-block' }}>
-          <Star size={32} color="#facc15" fill={interestedCount > 0 ? "#facc15" : "none"} />
+          <MousePointer size={32} color="#facc15" fill={interestedCount > 0 ? "#facc15" : "none"} />
           {interestedCount > 0 && (
             <span style={{
               position: 'absolute',
